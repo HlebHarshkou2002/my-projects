@@ -1,0 +1,108 @@
+html {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url('dollars-background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.main-wrapper {
+    height: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.inputs-block {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.inputs-block-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result-block {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#accumulation-saving {
+    position: relative;
+    bottom: 62px; left: 120px;
+}
+
+#accumulation-spending {
+    position: relative;
+    bottom: 62px; left: 120px;
+}
+
+/* Стили для отдельных элементов */
+
+#kopilka {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h6 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.input {
+    height: 32px;
+    width: 220px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    box-shadow: -1px -1px 1em rgb(110, 125, 255);
+}
+
+input, 
+input:active, 
+input:focus {
+    outline: none;
+}
+
+input:hover, input:focus {
+    border: rgb(121, 119, 255) solid 0px;
+    border-radius: 5px;
+    background-color: rgb(107, 233, 255);
+    box-shadow: -1px -1px 1em rgb(107, 255, 62);
+}
+
+.total-numb input {
+    background-color: rgb(231, 231, 231);
+    box-shadow: none;
+    pointer-events: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#money-box-range {
+    box-shadow: none;
+}
+
+#money-box-range:hover {
+    box-shadow: none;
+}
+
+
+

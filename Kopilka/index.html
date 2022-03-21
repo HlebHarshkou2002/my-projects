@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Копилочка</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icon-fav.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <h1 id="kopilka">Копилка</h1>
+        <div class="inputs-block">
+            <div class="inputs-block-column">
+                <h6>Доход в месяц</h6>
+                <div class="inputs-wrapper">
+                    <input type="number" placeholder="Зарплата" id="income-salary" class="input">
+                    <input type="number" placeholder="Фриланс" id="income-freelance" class="input">
+                    <input type="number" placeholder="Доп. доход" id="income-extra-1" class="input">
+                    <input type="number" placeholder="Доп. доход" id="income-extra-2" class="input">
+                </div>
+            </div>
+
+            <div class="inputs-block-column">
+                <h6>Обязательные расходы</h6>
+                <div class="inputs-wrapper">
+                    <input type="number" placeholder="Аренда квартиры" id="costs-flat" class="input">
+                    <input type="number" placeholder="ЖКХ" id="costs-house-services" class="input">
+                    <input type="number" placeholder="Транспорт" id="transport" class="input">
+                    <input type="number" placeholder="Долги" id="debts" class="input">
+                </div>
+            </div>
+
+            <div class="inputs-block-column">
+                <div class="total-numb">
+                    <h6>Доступно в месяц(без копилки)</h6>
+                    <input class="total" id="total-month" value="0">
+                </div>
+
+                <div class="total-numb">
+                    <h6>Доступно в день</h6>
+                    <input class="total" id="total-day" value="0">
+                </div>
+
+                <div class="total-numb">
+                    <h6>Накопим за год</h6>
+                    <input class="total" id="total-year" value="0">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="range-block">
+            <div class="procents">
+                <h6>Монеточка(Сколько откладываем?)</h6>
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" step="1" value="0" id="money-box-range">
+                </div>
+                <div><span id="total-precents">0</span>%</div>
+            </div>
+        </div>
+
+        <div class="result-block">
+            <div class="total-numb" class="result-numb">
+                <h6>Копим: </h6>
+                <input type="number" id="accumulation-saving" value="0">
+            </div>
+
+            <div class="total-numb" class="result-numb">
+                <h6>Тратим: </h6>
+                <input type="number" id="accumulation-spending" value="0">
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
